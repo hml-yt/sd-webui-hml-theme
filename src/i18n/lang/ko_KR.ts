@@ -8,6 +8,7 @@ const translation: Translation = {
   fixed: '고정',
   float: '부유',
   help: '도움말',
+  hml: 'HML',
   kitchen: 'Kitchen',
   loadPrompt: '로드 프롬프트',
   lobe: 'Lobe',

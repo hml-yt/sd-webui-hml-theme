@@ -6,6 +6,7 @@ const translation = {
   fixed: 'Fixed',
   float: 'Float',
   help: 'Help',
+  hml: 'HML',
   kitchen: 'Kitchen',
   loadPrompt: 'Load Prompt',
   lobe: 'Lobe',

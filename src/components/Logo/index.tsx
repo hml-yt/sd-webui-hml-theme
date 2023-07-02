@@ -8,6 +8,7 @@ import { shallow } from 'zustand/shallow';
 import { useAppStore } from '@/store';
 
 import KitchenLogo from './KitchenLogo';
+import HMLLogo from './logo.png';
 
 export interface LogoProps {
   size?: number;
@@ -17,6 +18,10 @@ export interface LogoProps {
 const Logo = memo<LogoProps>(({ size = 32, style }) => {
   const setting = useAppStore((st) => st.setting, isEqual);
   const themeMode = useAppStore((st) => st.themeMode, shallow);
+
+  if (setting.logoType === 'lobe') {
+    return <LobeLogo extra="SD" size={size} style={style} type="combine" />;
+  }
 
   if (setting.logoType === 'kitchen') {
     return <KitchenLogo size={size * 0.75} style={style} themeMode={themeMode} />;
@@ -46,7 +51,12 @@ const Logo = memo<LogoProps>(({ size = 32, style }) => {
     );
   }
 
-  return <LobeLogo extra="SD" size={size} style={style} type="combine" />;
+  return (
+    <Space align="center" size={size * 0.3}>
+      <img alt="logo" src={HMLLogo} style={{ height: size, ...style }} />{' '}
+      <b style={{ fontSize: size * 0.6 }}>HMLSD</b>
+    </Space>
+  );
 });
 
 export default Logo;

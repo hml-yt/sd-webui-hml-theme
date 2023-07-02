@@ -89,6 +89,10 @@ const SettingForm = memo(() => {
           <Segmented
             options={[
               {
+                label: t('hml'),
+                value: 'hml',
+              },
+              {
                 label: t('lobe'),
                 value: 'lobe',
               },

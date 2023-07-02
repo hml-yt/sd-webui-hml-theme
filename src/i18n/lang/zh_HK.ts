@@ -8,6 +8,7 @@ const translation: Translation = {
   fixed: '固定',
   float: '懸浮',
   help: '幫助',
+  hml: 'HML',
   kitchen: 'Kitchen',
   loadPrompt: '加載提示',
   lobe: 'Lobe',

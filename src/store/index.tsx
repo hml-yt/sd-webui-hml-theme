@@ -37,7 +37,7 @@ export interface WebuiSetting {
   liteAnimation: boolean;
   logoCustomTitle: string | undefined;
   logoCustomUrl: string | undefined;
-  logoType: 'lobe' | 'kitchen' | 'custom';
+  logoType: 'hml' | 'lobe' | 'kitchen' | 'custom';
   neutralColor: NeutralColor | undefined;
   primaryColor: PrimaryColor | undefined;
   promptEditor: boolean;
@@ -50,7 +50,7 @@ export interface WebuiSetting {
 
 export const defaultSetting: WebuiSetting = {
   enableExtraNetworkSidebar: true,
-  enableHighlight: false,
+  enableHighlight: true,
   enableSidebar: true,
   enableWebFont: true,
   extraNetworkCardSize: 86,
@@ -58,14 +58,14 @@ export const defaultSetting: WebuiSetting = {
   extraNetworkSidebarExpand: true,
   extraNetworkSidebarWidth: 340,
   i18n: 'en',
-  layoutHideFooter: false,
+  layoutHideFooter: true,
   layoutSplitPreview: false,
   liteAnimation: false,
   logoCustomTitle: '',
   logoCustomUrl: '',
-  logoType: 'lobe',
-  neutralColor: undefined,
-  primaryColor: undefined,
+  logoType: 'hml',
+  neutralColor: 'kitchen',
+  primaryColor: 'purple',
   promptEditor: false,
   promptTextareaType: 'resizable',
   sidebarExpand: true,

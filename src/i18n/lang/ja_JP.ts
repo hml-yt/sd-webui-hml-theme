@@ -8,6 +8,7 @@ const translation: Translation = {
   fixed: '固定',
   float: 'フロート',
   help: 'ヘルプ',
+  hml: 'HML',
   kitchen: 'キッチン',
   loadPrompt: 'プロンプトをロード',
   lobe: 'ローブ',
